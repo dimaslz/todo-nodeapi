@@ -1,14 +1,14 @@
 'use strict';
 
-import path from 'path';
-import bodyParser from 'body-parser';
-import nunjucks from 'nunjucks';
+var path = require('path');
+var bodyParser = require('body-parser');
+var nunjucks = require('nunjucks');
 
-import express from 'express';
-import mongoose from 'mongoose';
+var express = require('express');
+var mongoose = require('mongoose');
 
-import config from 'config';
-import router from 'api/router';
+var config = require('config');
+var router = require('api/router');
 
 mongoose.connect('mongodb://localhost:27017/todo');
 var db = mongoose.connection;

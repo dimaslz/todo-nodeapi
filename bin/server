@@ -3,6 +3,6 @@
 
 require('app-module-path').addPath(__dirname + '/../server');
 
-require("babel-core/register")(require('../build/config/babel'));
+// require("babel-core/register")(require('../build/config/babel'));
 
 require('server');
