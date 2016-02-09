@@ -10,7 +10,8 @@ var mongoose = require('mongoose');
 var config = require('config');
 var router = require('api/router');
 
-mongoose.connect('mongodb://localhost:27017/todo');
+// mongoose.connect('mongodb://localhost:27017/todo');
+mongoose.connect('mongodb://todoapp:6cd6472e95d7a7a40014e7e71f4eac46@dokku-mongo-todoapp:27017/todoapp');
 var db = mongoose.connection;
  
 db.on('error', function (err) {
