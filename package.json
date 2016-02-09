@@ -1,0 +1,44 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "First node api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bin/server"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "express",
+    "mongoose"
+  ],
+  "author": "Dimas López (aka dimaslz) <dimaslopezzurita@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.2",
+    "app-module-path": "^1.0.5",
+    "assert": "^1.3.0",
+    "mongoose-unique-validator": "^0.4.1",
+    "nunjucks": "^2.3.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "babel": "^6.0.15",
+    "babel-core": "^6.0.20",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.0.15",
+    "babelify": "^7.2.0",
+    "body-parser": "^1.14.2",
+    "browserify": "^12.0.1",
+    "bugsnag": "^1.6.5",
+    "consolidate": "^0.14.0",
+    "del": "latest",
+    "gulp": "^3.9.0",
+    "gulp-develop-server": "^0.5.0",
+    "jshint": "^2.9.1"
+  }
+}
