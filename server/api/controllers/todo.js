@@ -11,12 +11,16 @@ var getNumOfDocs = function(model, query, callback) {
 
 module.exports = {
     listTasks(req, res, next) {
-        Task.find({'status': req.query.status}, function(err, docs) {
+        var query = {};
+        if(req.query.status) {
+            query = {'status': req.query.status};
+        }
+        Task.find(query).sort("-status").exec(function(err, docs) {
             if (err) { 
                 res.status(409).json({'error': err.message});
             }
             
-            getNumOfDocs(Task, {'status': req.query.status}, function(err, count) {
+            getNumOfDocs(Task, query, function(err, count) {
                 if (err) { return console.log(err.message); }
                 
                 res.status(200).json({'data': docs, 'count': count});
